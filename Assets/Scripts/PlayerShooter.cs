@@ -4,27 +4,27 @@ using UnityEngine;
 
 public class PlayerShooter : MonoBehaviour
 {
-    public GameObject bulletPrefab;     // Prefab de la bala (tu papa frita)
-    public Transform firePoint;         // Punto desde donde se dispara la bala
-    public float bulletSpeed = 10f;
-    public float fireRate = 0.2f;       // Tiempo entre disparos
+    public GameObject bulletPrefab;
 
-    private float nextFireTime = 0f;
+    public Transform firePoint;
+
+    public float bulletSpeed = 20f;
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && Time.time >= nextFireTime)
+        if (Input.GetButtonDown("Jump"))
         {
             Shoot();
-            nextFireTime = Time.time + fireRate;
         }
     }
 
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.velocity = firePoint.up * bulletSpeed;
+
+        rb.velocity = Vector2.up * bulletSpeed;
     }
 }
 

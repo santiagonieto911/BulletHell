@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     {
         // Entrada del teclado (WASD o flechas)
         movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
     }
 
     void FixedUpdate()
