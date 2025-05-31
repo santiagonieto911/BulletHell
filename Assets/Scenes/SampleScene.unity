@@ -479,6 +479,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4078693028446922388, guid: 6ff70bb5482e9954cb3afc7c70ed694d, type: 3}
+      propertyPath: fireRate
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4078693028446922388, guid: 6ff70bb5482e9954cb3afc7c70ed694d, type: 3}
+      propertyPath: bulletCount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: -4078693028446922388, guid: 6ff70bb5482e9954cb3afc7c70ed694d, type: 3}
+      propertyPath: bulletSpeed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3697324662035042112, guid: 6ff70bb5482e9954cb3afc7c70ed694d, type: 3}
       propertyPath: m_Name
       value: Ensalada
@@ -501,7 +513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3990621715259409424, guid: 6ff70bb5482e9954cb3afc7c70ed694d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.67
       objectReference: {fileID: 0}
     - target: {fileID: 3990621715259409424, guid: 6ff70bb5482e9954cb3afc7c70ed694d, type: 3}
       propertyPath: m_LocalRotation.w
